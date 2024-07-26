@@ -1,5 +1,5 @@
 <h1 align="center">
-    <Image src="public/llama_base.png" alt="Coach Llama" width="100" height="100">
+    <Image src="public/llama_base.png" alt="Coach Llama" width="100">
 </h1>
 <h2 align="center">
     Coach LlaMa 🧢🦙
