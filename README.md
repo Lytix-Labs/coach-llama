@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <Image src="public/llama_base.png" alt="Coach Llama" width="100" height="100">
+</h1>
+<h2 align="center">
+    Coach LlaMa 🧢🦙
+</h2>
+<p align="">
+    Coach LLaMa is your own personal gym trainer, powered by computer vision 🤖👀 and AI 🧠. Get instant feedback on if you're performing your lifts correctly and safely. Select the exercise you're performing, and record yoursel doing one rep. Coach LLaMa will analyze the footage, and let you know where you're going wrong! 
+</p>
+<p align="center">
+    <a href="https://lytix.co">
+        <img src="https://img.shields.io/badge/Visit%20Us-Lytix-brightgreen" alt="Lytix">
+    </a>  
+    <a href="https://discord.gg/8TCbHsSe">
+        <img src="https://img.shields.io/badge/Join%20our%20community-Discord-blue" alt="Discord Server">
+    </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+        <img src="./public//demo.gif" alt="Landing Page Demo">
+</p>
 
-## Available Scripts
+## Live demo
 
-In the project directory, you can run:
+[**Check it out here 🚀**](https://coach-llama.lytix.co/)
 
-### `npm start`
+## How to start Coach LLaMa on your local machine
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Lytix](https://lytix.co) account. Instruction on how to get an API key can be found [here](https://docs.lytix.co/api-key-setup)
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install  dependencies
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Start Co
 
-### `npm run eject`
+Start the React app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### To add support for new exercises:
+1. Navigate to app.js, add your chosen lift to the prompt in "handAskGPT", along with prompt instructions on how to analyze coordiantes.
+2. Also add your lift to the select box that sets the selectedExercise state.
+```
