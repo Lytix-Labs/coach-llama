@@ -30,27 +30,22 @@
 
 - [Lytix](https://lytix.co) account. Instruction on how to get an API key can be found [here](https://docs.lytix.co/api-key-setup)
 
-```
 
 Install  dependencies
 
-```
-
-npm install
-
+```sh
+> npm install
 ```
 
 ### Start Co
 
 Start the React app
 
-```
-
-npm start
-
+```sh
+> npm start
 ```
 
 ### To add support for new exercises:
 1. Navigate to app.js, add your chosen lift to the prompt in "handAskGPT", along with prompt instructions on how to analyze coordiantes.
 2. Also add your lift to the select box that sets the selectedExercise state.
-```
+
